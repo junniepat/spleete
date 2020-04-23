@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-function App() {
+import Home from '../src/Pages/Home'
+import quote from '../src/Pages/quote'
+import dashboard from '../src/Pages/Dashboard'
+import Navigation from '../src/MiniComponents/Navigation'
+
+export default function BasicExample() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+     
+      <div>
+      
+      {/* <Navigation home='/home' about='/about' dashboard='/dasboard' quote='/quote'/> */}
+      
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/dashboard" component={dashboard}></Route>
+          <Route path="/quote" component={quote}></Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
+
+// You can think of these components as "pages"
+// in your app.
+
+
+function About() {
+  return (
+    <div>
+      <h2>About</h2>
     </div>
   );
 }
 
-export default App;
+
