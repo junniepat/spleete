@@ -7,15 +7,10 @@ import {
 } from "react-router-dom";
 
 import { Layout, Menu, Breadcrumb } from 'antd';
-import {
-    DesktopOutlined,
-    PieChartOutlined,
-    FileOutlined,
-    TeamOutlined,
-    UserOutlined,
-  } from '@ant-design/icons';
+import Main from '../SubPages/Main';
+import Employee from '../SubPages/Employees/Employee';
+import AddEmployee from '../SubPages/Employees/AddEmployee'; 
 
-  import Main from '../SubPages/Main'
 
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
@@ -32,6 +27,16 @@ const routes = [
     path: "/bubblegum",
     sidebar: () => <div></div>,
     main: () => <Main/>
+  },
+  {
+    path: "/employee",
+    sidebar: () => <div></div>,
+    main: () => <Employee/>
+  },
+  {
+    path: "/addemployee",
+    sidebar: () => <div></div>,
+    main: () => <AddEmployee/>
   },
   {
     path: "/shoelaces",
@@ -85,6 +90,14 @@ render(){
           defaultSelectedKeys={['1']}
           style={{ height: '100%', borderRight: 0 }}
         >
+          <Menu.Item key="1099" to="/"  title="spleete" style={{background: '#F3AC21'}}>
+                <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.27 22.24C13.82 22.24 16.4 19.48 16.4 16.27C16.4 8.56 3.68 11.77 3.68 6.64C3.68 4.81 5.21 3.31 8.78 3.31C10.64 3.31 12.71 3.85 14.54 5.02L15.53 2.62C13.79 1.42 11.24 0.76 8.78 0.76C3.26 0.76 0.74 3.52 0.74 6.76C0.74 14.56 13.46 11.32 13.46 16.45C13.46 18.28 11.9 19.69 8.27 19.69C5.57 19.69 2.9 18.67 1.34 17.26L0.23 19.6C1.91 21.16 5.06 22.24 8.27 22.24ZM21.6388 22.18C22.7188 22.18 23.6188 21.31 23.6188 20.11C23.6188 18.91 22.7188 18.07 21.6388 18.07C20.5288 18.07 19.5988 18.91 19.5988 20.11C19.5988 21.31 20.5288 22.18 21.6388 22.18Z" fill="#FEFEFE"/>
+                </svg>
+              <span></span>
+          </Menu.Item>
+
+
           <Menu.Item key="1" to="/"  title="Home">
             <svg width="23" height="23" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12.6317 6.44758C12.4283 6.44758 12.2633 6.58855 12.2633 6.76236V12.3705H8.31097V8.85005C8.31097 8.67624 8.14602 8.53527 7.94264 8.53527H5.05742C4.85404 8.53527 4.68909 8.67624 4.68909 8.85005V11.6415C4.68909 11.8153 4.85404 11.9563 5.05742 11.9563C5.2608 11.9563 5.42575 11.8153 5.42575 11.6415V9.16484H7.57431V12.3705H0.736652V4.66559L6.49997 0.718257L12.4013 4.76008C12.56 4.86883 12.7918 4.8469 12.919 4.71128C13.0462 4.57561 13.0207 4.37756 12.8619 4.2688L6.7303 0.0691736C6.59573 -0.0230579 6.4042 -0.0230579 6.26964 0.0691736L0.137999 4.2688C0.0507675 4.32856 0 4.41885 0 4.51444V12.6852C0 12.859 0.164887 13 0.368326 13H12.6317C12.8351 13 13 12.859 13 12.6852V6.76236C13 6.58849 12.8351 6.44758 12.6317 6.44758Z" fill="white"/>

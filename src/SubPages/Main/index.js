@@ -4,21 +4,22 @@ import {Row, Col, Card, CardTitle, CardBody} from 'reactstrap';
 import BusinessCard from '../../MiniComponents/BusinessCard';
 import SpleetePackages from '../../MiniComponents/SpleetePackages';
 import ProfileBar from '../../MiniComponents/ProfileBar';
-
+import {Link} from 'react-router-dom';
 export default class Main extends Component {
 
     render(){
         return(
             <>
                 <Row>
-                   <ProfileBar/>
+                   <ProfileBar className="d-md-none"/>
 
                     <Col md={9} className="mainBg">
                         <Row>
                         <div className="col-md-8">
                             <Col md={12} className="ml-auto mr-auto" style={{paddingLeft: '30px'}}>
-                            <div className='row mainCard'>
+                            <div className='row mainCard pb-4'>
                                 <div className='col text-center'>
+                                    <Link to='/addemployee'>
                                 <svg width="67" height="62" viewBox="0 0 52 50" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M51 46H33V37.5396C33 35.0325 34.9105 33 37.2675 33H46.7321C49.0892 33 51 35.0325 51 37.5396V46Z" fill="#EB5777"/>
 <path d="M42.0003 35C40.8954 35 40 34.2938 40 33.4233V29H44V33.4233C44.0005 34.2938 43.1046 35 42.0003 35Z" fill="#E39F6E"/>
@@ -75,14 +76,15 @@ export default class Main extends Component {
                                     <span className="title">
                                         Add Employee
                                     </span>
+                                    </Link>
                                 </div>
 
-                                <div className='col-md-1'>
-                                    <div className='line'>
-                                    </div>
+                                <div className='col-md-1 line'>
+                               
                                 </div>
 
                                 <div className='col text-center'>
+                                    <Link to='/employee'>
                                 <svg width="67" height="62" viewBox="0 0 67 62" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M35.1543 44.6098C43.6057 44.6098 50.4568 38.0087 50.4568 29.8658C50.4568 21.723 43.6057 15.1219 35.1543 15.1219C26.703 15.1219 19.8519 21.723 19.8519 29.8658C19.8519 38.0087 26.703 44.6098 35.1543 44.6098Z" fill="#085AFA" fill-opacity="0.7"/>
 <path d="M60.2918 11.4006C63.5539 11.4006 66.1984 9.06005 66.1984 6.1728C66.1984 3.28554 63.5539 0.944962 60.2918 0.944962C57.0297 0.944962 54.3852 3.28554 54.3852 6.1728C54.3852 9.06005 57.0297 11.4006 60.2918 11.4006Z" fill="#F5B955"/>
@@ -107,6 +109,7 @@ export default class Main extends Component {
                                 <span className="title">
                                         View Employee
                                     </span>
+                                    </Link>
                                 </div>
                             </div>            
                        
@@ -120,7 +123,7 @@ export default class Main extends Component {
                             </span>
 
                         
-                            <div className='col-md-11 ml-auto mr-auto'>
+                            <div className='col-md-11 pt-2 ml-auto mr-auto'>
                                 <div className='row'>
                                     <div className='col-md-2 border-left'>
                                     <svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,25 +149,27 @@ export default class Main extends Component {
 </svg>
 
                                     </div>
-                                    <div className='col-md-10 border-bottom'>
+                                    
+                                    <div className='col-md-10 mb-1 pb-2 border-bottom'>
                                         <span className='businessText'><b>54</b></span>
                                         <span className='businessText'>Employees</span>
 
+                                    </div>
 
-                                        <div className='row'>
-                                            <div className='col'>
+
+                                    <div className="col-md-12">
+                                    <div className='row'>
+                                            <div className='col-9'>
                                                 <span className='seeAll'>See All</span>
                                             </div>
 
-                                            <div className='col'> 
+                                            <div className='col-2'> 
                                             <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="9" cy="9" r="9" fill="#DBE9FF"/>
                                             </svg>
 
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
@@ -183,13 +188,7 @@ export default class Main extends Component {
                                     </>
                                 }/>
 
-                                <BusinessCard title="Manage Employees"                                
-                                renderTitle={
-                                    <>
-                                    <Card>jj</Card>
-
-                                    </>
-                                }/>
+                               
 
                                 <BusinessCard title="Report" renderTitle={
                                     <>

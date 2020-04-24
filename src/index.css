@@ -2,20 +2,21 @@
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
 
-body, *{
+body,
+* {
   font-family: 'Montserrat', sans-serif;
-font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .jumbotron {
-  background: #F2FBFF url('./img/jumbotronBg.png')  !important;
+  background: #F2FBFF url('./img/jumbotronBg.png') !important;
   background-size: contain !important;
   background-repeat: no-repeat !important;
   background-position: right !important;
 }
 
 .blueDots {
-  background: url('./img/blueDots.png')  !important;
+  background: url('./img/blueDots.png') !important;
   background-size: 20% !important;
   background-repeat: no-repeat !important;
   background-position: right !important;
@@ -39,7 +40,7 @@ font-family: 'Raleway', sans-serif;
   background: url('./img/stats.jpg');
   min-height: 250px;
   background-size: 100%;
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 
@@ -51,10 +52,10 @@ font-family: 'Raleway', sans-serif;
   text-rendering: geometricPrecision;
   font-weight: bold;
   letter-spacing: -0.7px;
-    line-height: 1.25;
+  line-height: 1.25;
 }
 
-.text-bold{
+.text-bold {
   font-weight: bold;
 }
 
@@ -88,11 +89,11 @@ font-family: 'Raleway', sans-serif;
   }
 
   .marginTopText {
-    
+
     margin-top: 170px !important;
   }
 
-  .bg-dark-transparent{
+  .bg-dark-transparent {
     background: rgba(0, 0, 0, 0.7);
   }
 
@@ -100,8 +101,8 @@ font-family: 'Raleway', sans-serif;
   .btn-primary {
     background: rgb(2, 43, 105) !important;
     min-width: 170px;
-    padding: 8px !important; 
-  } 
+    padding: 8px !important;
+  }
 
   .display-5 {
     font-family: 'Montserrat', sans-serif;
@@ -111,34 +112,34 @@ font-family: 'Raleway', sans-serif;
     text-rendering: geometricPrecision;
     font-weight: bold;
     letter-spacing: -0.7px;
-      line-height: 1.25;
+    line-height: 1.25;
   }
 }
 
 
 a.nav-link {
   color: rgb(2, 43, 105) !important;
-  font-size: small; 
-    text-transform: capitalize;
-    font-weight: 500;
-    opacity: .6;
-    transition: opacity ease 300ms;
-    will-change: opacity;
+  font-size: small;
+  text-transform: capitalize;
+  font-weight: 500;
+  opacity: .6;
+  transition: opacity ease 300ms;
+  will-change: opacity;
 }
 
 a.nav-link:hover {
   color: rgb(3, 24, 54) !important;
-  font-size: small; 
-    text-transform: capitalize;
-    font-weight: 500;
-    opacity: .6;
-    transition: opacity ease 300ms;
-    will-change: opacity;
+  font-size: small;
+  text-transform: capitalize;
+  font-weight: 500;
+  opacity: .6;
+  transition: opacity ease 300ms;
+  will-change: opacity;
 }
 
 .nav-item {
   min-width: 80px;
-  padding:0 20px;
+  padding: 0 20px;
 }
 
 footer {
@@ -148,16 +149,17 @@ footer {
 .btn-primary {
   background: rgb(2, 43, 105) !important;
   min-width: 170px;
-  padding: 15px !important; 
-} 
+  padding: 15px !important;
+}
 
 .btn-warning {
   background: #FFA023 !important;
   min-width: 170px;
-  padding: 15px !important; 
-} 
+  padding: 15px !important;
+}
 
-footer a, footer h5 {
+footer a,
+footer h5 {
   color: #fff !important;
   font-weight: 500;
   font-size: 1.5em;
@@ -165,7 +167,7 @@ footer a, footer h5 {
 
 
 .text-white {
-  color:#fff !important
+  color: #fff !important
 }
 
 .SocialBtn {
@@ -197,13 +199,13 @@ button.navbar-toggler {
   margin-right: auto;
   border-radius: 50%;
   width: 103px;
-height: 102px;
-align-content: center;
-align-self: center;
-justify-self: center;
-border: 1px dashed #F3AC21;
-box-sizing: border-box;
-position: relative;
+  height: 102px;
+  align-content: center;
+  align-self: center;
+  justify-self: center;
+  border: 1px dashed #F3AC21;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .profile_img {
@@ -214,11 +216,11 @@ position: relative;
   margin-right: auto;
   position: absolute;
   border-radius: 50%;
-width: 83px;
-height: 83px;
+  width: 83px;
+  height: 83px;
 
-/* background: url(.png); */
-background-blend-mode: normal;
+  /* background: url(.png); */
+  background-blend-mode: normal;
 }
 
 .profile_name {
@@ -231,13 +233,13 @@ background-blend-mode: normal;
   align-self: center;
   justify-self: center;
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 
 }
 
@@ -256,7 +258,7 @@ color: #FFFFFF;
   font-weight: 600;
   font-size: 9px;
   line-height: 11px;
-  
+
   color: rgba(196, 220, 251, 0.7);
 }
 
@@ -269,7 +271,7 @@ color: #FFFFFF;
   font-weight: 500;
   font-size: 12px;
   line-height: 15px;
-  
+
   color: #FFFFFF;
 }
 
@@ -285,56 +287,54 @@ color: #FFFFFF;
 
 .TaskCard .hamburger {
   position: absolute;
-width: 2px;
-height: 10px;
-left: 190px;
-top: 242px;
+  width: 2px;
+  height: 10px;
+  left: 190px;
+  top: 242px;
 
 }
 
 .TaskCard h3 {
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 12px;
-line-height: 15px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
 
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .TaskCard p {
   margin-top: 14px;
   font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 8px;
-line-height: 6px;
-color: rgb(233, 233, 233);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 8px;
+  line-height: 6px;
+  color: rgb(233, 233, 233);
 }
 
 .mainBg {
-top: 0px;
-background: rgba(237, 240, 245, 0.59);
+  top: 0px;
+  background: rgba(237, 240, 245, 0.59);
 }
 
 .mainCard {
-margin-top: 20px;
-padding-right: 30px;
-padding-top: 40px;
-min-height: 120px;
-background: #FFFFFF;
-border: 1px solid #ECECEC;
-box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(224, 224, 224, 0.55);
-border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 30px;
+  padding-top: 40px;
+  min-height: 120px;
+  background: #FFFFFF;
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(224, 224, 224, 0.55);
+  border-radius: 5px;
 }
 
 .line {
-  height: 100px;
-  margin-top: 10px;
-border-left: 2px solid #ECECEC;
-transform: rotate(0deg);
+  border-right: 2px solid #ECECEC;
 }
 
 .mainCard .title {
@@ -342,37 +342,37 @@ transform: rotate(0deg);
   text-align: center;
 
   margin-top: 20px;
-font-family: Montserrat;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
 
-color: rgba(29, 29, 31, 0.76);
+  color: rgba(29, 29, 31, 0.76);
 }
 
 .BusinessStatus {
 
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 15px;
-/* identical to box height */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
 
 
-color: #0C0C0C;
+  color: #0C0C0C;
 }
 
 .businessText {
   font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
-font-size: 9px;
-line-height: 11px;
-display: block;
-color: #0B0B0C;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 9px;
+  line-height: 11px;
+  display: block;
+  color: #0B0B0C;
 }
 
 .border-left {
@@ -380,15 +380,15 @@ color: #0B0B0C;
 }
 
 .border-bottom {
-  border-bottom: 1px solid #D2D2D2;
+  border-bottom: 2px solid #9CB8FF;
 }
 
 .card {
   background: #FFFFFF;
-border: 1px solid #ECECEC;
-box-sizing: border-box;
-box-shadow: 0px 4px 4px rgba(224, 224, 224, 0.55) !important;
-border-radius: 2px;
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(224, 224, 224, 0.55) !important;
+  border-radius: 2px;
 }
 
 .card-header {
@@ -403,20 +403,18 @@ border-radius: 2px;
   font-weight: 700;
   font-size: 9px;
   line-height: 11px;
-  
-  color: rgba(29, 29, 31, 0.7);
-  
 
+  color: rgba(29, 29, 31, 0.7);
 }
 
 .seeAll {
   font-family: Montserrat;
-font-style: normal;
-font-weight: 500;
-font-size: 9px;
-line-height: 11px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 9px;
+  line-height: 11px;
 
-color: #1D1D1F;
+  color: #1D1D1F;
 
 }
 
@@ -429,16 +427,37 @@ color: #1D1D1F;
   margin-bottom: 20px;
   margin-top: 20px;
   font-family: Montserrat;
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 12px;
 
-color: #1D1D1F;
+  color: #1D1D1F;
 
 }
 
 .spleeteCard {
   margin: auto 10px;
   position: absolute;
+}
+
+.ant-table-thead > tr > th {
+  background: transparent !important;
+}
+
+
+.ant-btn-primary {
+  color: #fff;
+  background-color: #022B69 !important;
+  border-color: #022B69 !important;
+}
+
+.ant-btn-danger {
+  color: #fff;
+  background-color: #FF102D !important;
+}
+
+.ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+  color: rgba(255, 255, 255, 0.65);
+  background: #022B69 !important;
 }

@@ -6,7 +6,7 @@ export default function BusinessCard(props) {
 
     return(
         <>
-            <Col  sm={12} md={6} lg={3}>
+            <Col  sm={12} md={6} lg={4}>
                 <Card style={{ marginBottom: '15px'}}>
                     <CardHeader>
                     <CardTitle>{props.title}</CardTitle>
